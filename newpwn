@@ -21,6 +21,8 @@ payload = "".join([])
 payload = padding + payload
 # gdb.attach(r)
 
+# r.sendline(payload)
+
 r.interactive()
 EOM
 )
