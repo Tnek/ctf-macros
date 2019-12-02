@@ -1,0 +1,28 @@
+#!/bin/sh
+template=$(cat <<- EOM
+from pwn import *
+
+context.terminal = ["urxvtc", "-e", "sh", "-c"]
+context.log_level = 'debug'
+
+e = ELF("./$1")
+
+remote = 0
+if remote:
+    r = remote("", 1234)
+else:
+    r = process("./$1")
+
+poprax = rop.find_gadget(["pop rax", "ret"])
+
+padding = "i" * 100
+payload = "".join([])
+
+payload = padding + payload
+
+r.interactive()
+EOM
+)
+
+echo "$template" > $1.py
+vim $1.py
