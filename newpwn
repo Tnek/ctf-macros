@@ -19,6 +19,7 @@ padding = "i" * 100
 payload = "".join([])
 
 payload = padding + payload
+# gdb.attach(r)
 
 r.interactive()
 EOM
