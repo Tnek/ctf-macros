@@ -31,4 +31,5 @@ EOM
 )
 
 echo "$template" > $1.py
+binaryninja $1 &
 vim $1.py
