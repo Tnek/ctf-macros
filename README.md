@@ -1,9 +1,9 @@
 # ctf-macros
 
-## newpwn
+## pwn
 Automatically sets up useful pwntools boilerplate used for ctfs
 
 Usage:
 ```
-$ newpwn <binary>
+$ pwn <binary>
 ```
