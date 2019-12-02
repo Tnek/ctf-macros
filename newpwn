@@ -6,6 +6,7 @@ context.terminal = ["urxvtc", "-e", "sh", "-c"]
 context.log_level = 'debug'
 
 e = ELF("./$1")
+rop = ROP(e)
 
 remote = 0
 if remote:
