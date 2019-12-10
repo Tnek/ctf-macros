@@ -7,3 +7,7 @@ Usage:
 ```
 $ pwn <binary>
 ```
+
+## simpleserv.py
+To avoid having to rewrite basic XSS callback stuff everytime
+I just want to experiment with CTF xssbots
