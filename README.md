@@ -1,11 +1,11 @@
 # ctf-macros
 
-## pwn
+## npwn
 Automatically sets up useful pwntools boilerplate used for ctfs
 
 Usage:
 ```
-$ pwn <binary>
+$ npwn <binary>
 ```
 
 ## google-chrome-burp
